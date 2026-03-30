@@ -1,0 +1,27 @@
+server:
+  port: 8083
+logging:
+  level:
+    root: INFO
+    org.hibernate: WARN
+    org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: WARN
+spring:
+  application:
+    name: faculty-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/faculty_service
+    username: ${username}
+    password: ${password}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: false
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
