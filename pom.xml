@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>4.0.5</version>
+		<version>3.2.5</version>
 	</parent>
 	<modules>
 		<module>course-service</module>
@@ -46,21 +46,6 @@
 				<version>${spring-cloud.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-openfeign</artifactId>
-				<version>5.0.1</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-data-jpa</artifactId>
-				<version>4.0.5</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-webmvc</artifactId>
-				<version>4.0.5</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
