@@ -10,6 +10,6 @@ public class GlobalException {
 
     @ExceptionHandler(CourseException.class)
     public ResponseEntity<String> courseExceptionHandel(CourseException c){
-        return ResponseEntity.status(c.getHttpStatus()).body(c.getMessage());
+        return ResponseEntity.status(c.getHttpStatus()).body(c.getLocalDate()+" "+c.getMessage());
     }
 }
